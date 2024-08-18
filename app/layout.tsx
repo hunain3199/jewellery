@@ -8,7 +8,6 @@ import { cookies } from 'next/headers';
 import { ReactNode } from 'react';
 import { Toaster } from 'sonner';
 import './globals.css';
-import Footer from 'components/layout/footer';
 
 const { TWITTER_CREATOR, TWITTER_SITE, SITE_NAME } = process.env;
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
@@ -53,7 +52,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
             <WelcomeToast />
           </main>
         </CartProvider>
-        <Footer />
+        
       </body>
     </html>
   );
