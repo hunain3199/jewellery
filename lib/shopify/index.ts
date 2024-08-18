@@ -114,6 +114,19 @@ export async function shopifyFetch<T>({
   }
 }
 
+// async function getTestMetaobject(){
+//   const query = `query MyQuery {
+//     metaobject(handle: {handle: "test-object", type: "test"}) {
+//       field(key: "name") {
+//         value
+//         type
+//       }
+//     }
+//   }`
+//   const res = await shopifyFetch<any>({query,})
+// }
+
+
 const removeEdgesAndNodes = <T>(array: Connection<T>): T[] => {
   return array.edges.map((edge) => edge?.node);
 };
