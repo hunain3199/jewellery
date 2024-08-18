@@ -49,7 +49,7 @@ export default async function Footer() {
           </p>
           <hr className="mx-4 hidden h-4 w-[1px] border-l border-neutral-400 md:inline-block" />
           <p>
-            <a href="https://github.com/vercel/commerce">View the source</a>
+           
           </p>
           <p className="md:ml-auto">
             <a href="" className="text-black dark:text-white">
