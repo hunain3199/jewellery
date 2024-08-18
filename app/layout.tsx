@@ -8,6 +8,7 @@ import { cookies } from 'next/headers';
 import { ReactNode } from 'react';
 import { Toaster } from 'sonner';
 import './globals.css';
+import Footer from 'components/layout/footer';
 
 const { TWITTER_CREATOR, TWITTER_SITE, SITE_NAME } = process.env;
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
@@ -43,7 +44,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
 
   return (
     <html lang="en" className={GeistSans.variable}>
-      <body className="bg-neutral-50 text-black selection:bg-teal-300 dark:bg-neutral-900 dark:text-white dark:selection:bg-pink-500 dark:selection:text-white">
+      <body className="bg-neutral-50 text-black selection:bg-teal-300 dark:bg-neutral-900 dark:text-white dark:selection:bg-pink-500 dark:selection:text-white m-0 p-0">
         <CartProvider cartPromise={cart}>
           <Navbar />
           <main>
@@ -52,6 +53,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
             <WelcomeToast />
           </main>
         </CartProvider>
+        <Footer />
       </body>
     </html>
   );

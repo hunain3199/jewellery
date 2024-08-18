@@ -19,7 +19,7 @@ export async function Navbar() {
           <MobileMenu menu={menu} />
         </Suspense>
       </div>
-      <div className="flex w-full items-center">
+      <div className="flex w-full items-center space-x-3">
         <div className="flex w-full md:w-1/3">
           <Link
             href="/"
