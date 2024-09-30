@@ -1,5 +1,4 @@
-import Footer from "components/layout/footer";
-
+import Footer from "components/Footer";
 export default function WebLayout({ children }:any) {
   return (
     <>

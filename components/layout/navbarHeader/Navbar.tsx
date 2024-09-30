@@ -108,7 +108,7 @@ const Navbar = () => {
 
         <div className="flex pl-10  flex-wrap w-full justify-evenly items-center">
           <div className=" p-2 border rounded-full">
-            <Heart className={`text-primary-theme`} />
+            <Heart className="text-orange-600" />
           </div>
 
           {/* Account */}
