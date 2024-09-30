@@ -6,7 +6,7 @@ export default function WebLayout({ children }:any) {
       <main>
       {children}
       </main>
-      <Footer />
+      
       
       
       
