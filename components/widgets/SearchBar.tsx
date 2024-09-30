@@ -83,7 +83,7 @@ const SearchBar: React.FC = () => {
       </Button>
       <Button
         type="submit"
-        className="block ml-2 md:hidden bg-primary-theme hover:bg-primary-theme/40 text-white px-4 py-2 rounded-lg"
+        className="block ml-2 md:hidden bg-orange-600 hover:bg-primary-theme/40 text-white px-4 py-2 rounded-lg"
       >
         <SearchIcon size={10} />
       </Button>
